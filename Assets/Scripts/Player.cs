@@ -20,11 +20,11 @@ public class Player : MonoBehaviour
 
 		if(transform.position.x > 3)
 		{
-			transform.Translate (3f, 0f, 0f);	
+			//transform.Translate (3f, 0f, 0f);	
 		} 
 		else if(transform.position.x < -3)
 		{
-			transform.Translate (-3f, 0f, 0f);
+			//transform.Translate (-3f, 0f, 0f);
 		}
 		if(Input.GetButtonDown("Jump"))
 		{
