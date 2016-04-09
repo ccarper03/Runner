@@ -53,6 +53,7 @@ public class Player : MonoBehaviour
 		if(other.gameObject.tag == "Destructable")
 		{
 			Destroy (other.gameObject);
+			//some comments
 		}
 	}
 }
