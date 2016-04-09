@@ -54,6 +54,7 @@ public class Player : MonoBehaviour
 		{
 			Destroy (other.gameObject);
 			//some comments
+			// more comments
 		}
 	}
 }
