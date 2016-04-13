@@ -5,12 +5,14 @@ public class Player : MonoBehaviour
 {
 	public GameControl control;
 	private Animator anim;
+	private Rigidbody body;
 	public float strafeSpeed = 4f;
 	private bool jumping = false;
 
 	void Start()
 	{
 		anim = GetComponent<Animator> ();
+		body = GetComponent<Rigidbody> ();
 	}
 
 	void Update () 
@@ -26,17 +28,12 @@ public class Player : MonoBehaviour
 		{
 			//transform.Translate (-3f, 0f, 0f);
 		}
-		if(Input.GetButtonDown("Jump"))
+		if(Input.GetButtonDown("Jump") && !jumping)
 		{
 			anim.SetTrigger ("Jump");
-		}
-		if (anim.GetCurrentAnimatorStateInfo (0).IsName ("Run")) 
-		{
-			jumping = false;
-		} 
-		else 
-		{
-			jumping = true; 
+			body.AddForce (Vector3.up * 250);
+			Debug.Log (Vector3.up);
+			jumping = true;
 		}
 	}
 
@@ -56,5 +53,10 @@ public class Player : MonoBehaviour
 			//some comments
 			// more comments
 		}
+	}
+
+	void JumpFinish()
+	{
+		jumping = false;
 	}
 }

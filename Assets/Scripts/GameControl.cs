@@ -6,6 +6,7 @@ public class GameControl : MonoBehaviour
 	public float startSpeed = -0.4f;
 	public float timeExtension = 1.5f; 
 	public Ground ground;
+	public int pickups = 0;
 
 	private float timeRemaining = 10;
 	private float totalTimeElapsed = 0;
@@ -44,6 +45,7 @@ public class GameControl : MonoBehaviour
 	public void PowerupCollected() 
 	{
 		timeRemaining += timeExtension;
+		pickups++;
 	}
 
 	/// Using Unity's old lagacy GUI system fix later to the updated method later///
