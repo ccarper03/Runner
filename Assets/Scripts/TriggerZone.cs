@@ -8,8 +8,7 @@ public class TriggerZone : MonoBehaviour
 		Destroy (other.gameObject);
 		if(other.gameObject.tag == "Player")
 		{
-			Debug.Log ("plyer has died");
+			Debug.Log ("Player has died.");
 		}
 	}
-
 }
