@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
 	private Rigidbody body;
 	public float strafeSpeed = 4f;
 	private bool jumping = false;
+	private int count; 
 
 	void Start()
 	{
@@ -46,6 +47,7 @@ public class Player : MonoBehaviour
 		else if(other.gameObject.name == "Obstacle(Clone)" && !jumping) 
 		{
 			control.slowWorldDown ();
+
 		}
 		if(other.gameObject.tag == "Destructable")
 		{
