@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameControl : MonoBehaviour 
 {
@@ -7,6 +8,7 @@ public class GameControl : MonoBehaviour
 	public float timeExtension = 1.5f; 
 	public Ground ground;
 	public int pickups = 0;
+	public Text text;
 
 	private float timeRemaining = 10;
 	private float totalTimeElapsed = 0;
@@ -68,5 +70,9 @@ public class GameControl : MonoBehaviour
 
 			Time.timeScale = 0; 
 		}
+	}
+	public float timeLeft()
+	{
+		return timeRemaining; // trying to make a time reamining count down
 	}
 }

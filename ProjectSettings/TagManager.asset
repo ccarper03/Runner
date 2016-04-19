@@ -4,8 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Destructable
+  - PickUp
   - Ground
+  - Obstacle
+  - Destructable
   layers:
   - Default
   - TransparentFX

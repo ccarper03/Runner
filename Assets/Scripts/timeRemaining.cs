@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class changeTextPickup : MonoBehaviour
+public class timeRemaining : MonoBehaviour
 {
 	private Text guitext;
 	string basetext;
@@ -20,7 +20,7 @@ public class changeTextPickup : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		guitext.text = basetext + " " + control.pickups;
+		// guitext.text = basetext + " " + control.timeLeft;
 	}
 }
 // This is a test for atom

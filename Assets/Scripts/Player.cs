@@ -40,20 +40,19 @@ public class Player : MonoBehaviour
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.name == "Powerup(Clone)") 
+		if (other.gameObject.tag == "PickUp") 
 		{
 			control.PowerupCollected ();
+			GetComponent<AudioSource>().Play ();
+			Destroy (other.gameObject);
 		} 
-		else if(other.gameObject.name == "Obstacle(Clone)" && !jumping) 
+
+		if(other.gameObject.tag == "Obstacle" && !jumping) 
 		{
 			control.slowWorldDown ();
-
-		}
-		if(other.gameObject.tag == "Destructable")
-		{
+			GetComponent<AudioSource>().Play ();
 			Destroy (other.gameObject);
-			//some comments
-			// more comments
+
 		}
 	}
 
