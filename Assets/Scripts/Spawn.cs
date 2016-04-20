@@ -11,6 +11,7 @@ public class Spawn : MonoBehaviour
 
 	void Update () 
 	{
+		spawnCycle *= 0.9996f;
 		timeElapsed += Time.deltaTime;
 		if (timeElapsed > spawnCycle) 
 		{

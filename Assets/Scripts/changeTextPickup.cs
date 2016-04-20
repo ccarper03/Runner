@@ -20,7 +20,7 @@ public class changeTextPickup : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		guitext.text = basetext + " " + control.pickups;
+		guitext.text = basetext + control.pickups;
 	}
 }
 // This is a test for atom

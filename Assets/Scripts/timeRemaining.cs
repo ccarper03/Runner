@@ -11,7 +11,6 @@ public class timeRemaining : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-
 		control = GameObject.FindObjectOfType <GameControl> ();
 		guitext = GetComponent<Text> ();
 		basetext = guitext.text;
@@ -20,7 +19,7 @@ public class timeRemaining : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		// guitext.text = basetext + " " + control.timeLeft;
+		guitext.text = basetext + Mathf.Ceil(control.timeRemaining);
 	}
 }
 // This is a test for atom

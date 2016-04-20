@@ -17,10 +17,9 @@ GameObject:
   - 199: {fileID: 19951442}
   - 114: {fileID: 11473014}
   - 82: {fileID: 8224782}
-  - 114: {fileID: 11473544}
   m_Layer: 0
   m_Name: Powerup
-  m_TagString: Destructable
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -203,19 +202,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84897fb58c9574643a4a2796709df203, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11473544
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 165204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 071ba2862816547ad8b6eff3ff9ab391, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myClip: {fileID: 8300000, guid: 8cb4cc083282a4870a237ff264f228fc, type: 3}
-  source: {fileID: 0}
 --- !u!135 &13539084
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -1779,6 +1765,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: PickUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

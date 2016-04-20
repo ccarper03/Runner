@@ -36,6 +36,9 @@ public class Player : MonoBehaviour
 			Debug.Log (Vector3.up);
 			jumping = true;
 		}
+
+		if (control.isGameOver)
+			Destroy(gameObject);
 	}
 
 	void OnTriggerEnter(Collider other)
@@ -43,16 +46,17 @@ public class Player : MonoBehaviour
 		if (other.gameObject.tag == "PickUp") 
 		{
 			control.PowerupCollected ();
-			GetComponent<AudioSource>().Play ();
-			Destroy (other.gameObject);
+			other.GetComponent<AudioSource>().Play ();
+			other.GetComponent<MeshRenderer>().enabled = false;
+			// Destroy (other.gameObject);
 		} 
 
-		if(other.gameObject.tag == "Obstacle" && !jumping) 
+		if(other.gameObject.tag == "Obstacle") 
 		{
 			control.slowWorldDown ();
-			GetComponent<AudioSource>().Play ();
-			Destroy (other.gameObject);
-
+			other.GetComponent<AudioSource>().Play ();
+			other.GetComponent<MeshRenderer>().enabled = false;
+			// Destroy (other.gameObject);
 		}
 	}
 
