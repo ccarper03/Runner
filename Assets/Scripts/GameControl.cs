@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour 
 {
@@ -24,7 +25,7 @@ public class GameControl : MonoBehaviour
 	{
 		if(isGameOver)
 		{
-			return;
+			SceneManager.LoadScene("GameOver");;
 		}
 
 		totalTimeElapsed += Time.deltaTime;
