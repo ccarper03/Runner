@@ -1,6 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameControl.cs">
+    <Files>
+      <File FileName="Assets/Scripts/GameControl.cs" Line="30" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/charlescarper/Documents/UnityProjects/CMOD/978-1-4302-6746_1_Thorn_Chapter09_SourceCode/Runner/Assets/Scripts/TriggerZone.cs" line="8" column="1" />
