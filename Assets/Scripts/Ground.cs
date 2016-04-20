@@ -21,8 +21,8 @@ public class Ground : MonoBehaviour {
 		if(transform.localPosition.z < -25.24f)
 		{
 			transform.Translate (0, 0, 149.87f);
-
 		}
+		
 //		offset = (offset + Time.deltaTime * speed) % 1;  // % 1 keeps offset between 0 and 1 
 //		groundrenderer.material.mainTextureOffset = new Vector2(0, -offset);
 	}
