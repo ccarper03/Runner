@@ -49,3 +49,5 @@
 /Users/charlescarper/Github/Runner/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/charlescarper/Github/Runner/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/charlescarper/Github/Runner/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/charlescarper/Github/Runner/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/charlescarper/Github/Runner/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
