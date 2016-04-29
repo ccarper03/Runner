@@ -19,7 +19,7 @@ public class timeRemaining : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		guitext.text = basetext + Mathf.Ceil(control.timeRemaining);
+		guitext.text = basetext + Mathf.Ceil(GameControl.timeRemaining);
 	}
 }
 // This is a test for atom

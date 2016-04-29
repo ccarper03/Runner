@@ -8,16 +8,17 @@ public class GameControl : MonoBehaviour
 	public float _startSpeed = -0.4f;
 	public float timeExtension = 1.5f;
 	public Ground ground;
-	public int pickups = 0;
+	public static int pickups;
 	public Text text;
-	public float timeRemaining = 10;
-	public float totalTimeElapsed = 0;
+	public static float timeRemaining = 10;
+	public static float totalTimeElapsed = 0;
 	public bool isGameOver = false;
 	[HideInInspector] public float startSpeed;
 
 	void Awake ()
 	{
 		startSpeed = _startSpeed;
+		pickups = 0;
 	}
 
 	// Update is called once per frame
@@ -27,9 +28,10 @@ public class GameControl : MonoBehaviour
 		{
 			SceneManager.LoadScene("GameOver");;
 		}
-
+		
 		totalTimeElapsed += Time.deltaTime;
 		timeRemaining -= Time.deltaTime * (1 / Time.timeScale);
+		
 		if(timeRemaining <= 0)
 		{
 			isGameOver = true;

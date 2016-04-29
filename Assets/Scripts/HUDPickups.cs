@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class HUDPickups : MonoBehaviour
 {
-	private GameControl control;
+	public static GameControl control;
 	private Text guiText;
 	private string baseText;
 

@@ -650,7 +650,6 @@ GameObject:
   - 114: {fileID: 1402130366}
   - 114: {fileID: 1402130365}
   - 114: {fileID: 1402130369}
-  - 114: {fileID: 1402130370}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -748,17 +747,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74867ca904d8a4bb9b809c2d42201e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1402130370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1402130364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a91a8d2115fc64005b967c93cf640062, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1569567411
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,6 +757,7 @@ GameObject:
   - 224: {fileID: 1569567412}
   - 222: {fileID: 1569567414}
   - 114: {fileID: 1569567413}
+  - 114: {fileID: 1569567415}
   m_Layer: 5
   m_Name: Text_Score
   m_TagString: Untagged
@@ -832,6 +821,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1569567411}
+--- !u!114 &1569567415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1569567411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a91a8d2115fc64005b967c93cf640062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiText: {fileID: 0}
+  baseText: 
 --- !u!1 &1841043709
 GameObject:
   m_ObjectHideFlags: 0

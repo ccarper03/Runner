@@ -16,6 +16,6 @@ public class ScoreDisplay : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		guiText.text = baseText + Mathf.Ceil();
+		//guiText.text = baseText + Mathf.Ceil(GameControl.totalTimeElapsed);
 	}
 }
