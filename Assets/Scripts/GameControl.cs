@@ -8,7 +8,7 @@ public class GameControl : MonoBehaviour
 	public float _startSpeed = -0.4f;
 	public float timeExtension = 1.5f;
 	public Ground ground;
-	public static int pickups;
+	public int pickups;
 	public Text text;
 	public static float timeRemaining = 10;
 	public static float totalTimeElapsed = 0;
